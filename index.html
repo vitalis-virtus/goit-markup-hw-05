@@ -56,7 +56,7 @@
       <section class="hero-1">
         <div class="hero-content">
           <h1 class="main-h1">Эффективные решения для вашего бизнеса</h1>
-          <a href="#" class="main-btn">Заказать услугу</a>
+          <button class="main-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -376,26 +376,30 @@
           <li class="customer">
             <a href="/" class="customer-link"
               ><svg class="customer-svg" width="41px" height="42px">
-                <use href="./images/sprite.svg#icon-customer-3"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-customer-3"></use>
+              </svg>
+            </a>
           </li>
           <li class="customer">
             <a href="/" class="customer-link"
               ><svg class="customer-svg" width="79px" height="42px">
-                <use href="./images/sprite.svg#icon-customer-4"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-customer-4"></use>
+              </svg>
+            </a>
           </li>
           <li class="customer">
             <a href="/" class="customer-link"
               ><svg class="customer-svg" width="59px" height="47px">
-                <use href="./images/sprite.svg#icon-customer-5"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-customer-5"></use>
+              </svg>
+            </a>
           </li>
           <li class="customer">
             <a href="/" class="customer-link"
               ><svg class="customer-svg" width="88px" height="45px">
-                <use href="./images/sprite.svg#icon-customer-6"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-customer-6"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -477,5 +481,51 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h4 class="modal-header">Оставьте свои данные, мы вам перезвоним</h4>
+        <ul class="modal-list">
+          <li class="modal-list-item">
+            <form action="#" method="post" class="modal-form">
+              <label class="modal-form-label">
+                Имя
+                <input type="text" name="" id=""
+              /></label>
+            </form>
+          </li>
+          <li class="modal-list-item">
+            <form action="#" method="post" class="modal-form">
+              <label class="modal-form-label">
+                Телефон
+                <input type="text" name="" id="" class="modal-form-input"
+              /></label>
+            </form>
+          </li>
+          <li class="modal-list-item">
+            <form action="#" method="post" class="modal-form">
+              <label class="modal-form-label">
+                Почта
+                <input type="text" name="" id=""
+              /></label>
+            </form>
+          </li>
+          <li class="modal-list-item">
+            <form action="#" method="post" class="modal-form">
+              <label class="modal-form-label">
+                Комментарий
+                <input type="text" name="" id=""
+              /></label>
+            </form>
+          </li>
+        </ul>
+        <button data-modal-close class="modal-closebtn">close</button>
+        <button class="modal-btn main-btn">Отправить</button>
+      </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
